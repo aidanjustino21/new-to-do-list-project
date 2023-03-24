@@ -1,0 +1,59 @@
+ sudo yum install git
+   48  git
+   49  git clone https://github.com/aidanjustino21/new-to-do-list-project.git
+   50  ls
+   51  cd new-to-do-list-project
+   52  ls
+   53  mysql -u root -p 'bkp' < 'scms'.sql
+   54  sudo mysql -u root -p
+   55  history
+
+ show databases;
++--------------------+
+| Database           |
++--------------------+
+| bkp                |
+| bkpscms            |
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+6 rows in set (0.00 sec)
+
+mysql> use bkp;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> show tables;
++---------------+
+| Tables_in_bkp |
++---------------+
+| address_table |
+| person_table  |
++---------------+
+2 rows in set (0.00 sec)
+
+mysql> select * from address_table;
++------------+----------+
+| address_id | address  |
++------------+----------+
+|          1 | illford  |
+|          2 | east ham |
+|          3 | feltham  |
++------------+----------+
+3 rows in set (0.00 sec)
+
+mysql> select * from person_table;
++-----------+-------------+------------+
+| person_id | person_name | address_id |
++-----------+-------------+------------+
+|         1 | aidan       |          3 |
+|         2 | mary        |          2 |
+|         3 | gowtham     |          2 |
++-----------+-------------+------------+
+3 rows in set (0.00 sec)
+
+mysql>
+

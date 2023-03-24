@@ -1,0 +1,82 @@
+this is in sql:
+use scms
+show tables;
+exit
+
+ pwd
+ mysqldump -u root -p 'scms' > 'scms'.sql
+Enter password:
+[ec2-user@ip-172-31-58-124 ~]$ ls
+companyproject1.txt                         scms-ajf
+mysql80-community-release-el9-1.noarch.rpm  scms.sql
+new-to-do-list-project
+[ec2-user@ip-172-31-58-124 ~]$ mysql -u root -p -e "CREATE DATABASE bkpscms";
+Enter password:
+[ec2-user@ip-172-31-58-124 ~]$ mysql -u root -p 'bkpscms' < 'scms'.sql    Enter password:
+[ec2-user@ip-172-31-58-124 ~]$ sudo mysql -u root -p
+Enter password:
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| bkpscms            |
+| information_schema |
+| mysql              |
+| performance_schema |
+| scms               |
+| sys                |
++--------------------+
+6 rows in set (0.01 sec)
+
+mysql> use bkpscms;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> show tables;
++-------------------+
+| Tables_in_bkpscms |
++-------------------+
+| address_table     |
+| person_table      |
++-------------------+
+2 rows in set (0.00 sec)
+
+mysql> exit
+Bye
+[ec2-user@ip-172-31-58-124 ~]$ pwd
+/home/ec2-user
+[ec2-user@ip-172-31-58-124 ~]$ ls
+companyproject1.txt                         scms-ajf
+mysql80-community-release-el9-1.noarch.rpm  scms.sql
+new-to-do-list-project
+
+ mv scms.sql /home/ec2-user/new-to-do-list-project/scms.sql
+[ec2-user@ip-172-31-58-124 ~]$ cd new-to-do-list-project
+[ec2-user@ip-172-31-58-124 new-to-do-list-project]$ git add scms.sql      [ec2-user@ip-172-31-58-124 new-to-do-list-project]$ git commit -m "dumpscms"
+[main d7297e9] dumpscms
+ Committer: EC2 Default User <ec2-user@ip-172-31-58-124.ec2.internal>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 78 insertions(+)
+ create mode 100644 scms.sql
+[ec2-user@ip-172-31-58-124 new-to-do-list-project]$ git push
+Username for 'https://github.com': aidanjustino212@gmail.com
+Password for 'https://aidanjustino212@gmail.com@github.com':
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.17 KiB | 1.17 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/aidanjustino21/new-to-do-list-project.git
+   fb1de23..d7297e9  main -> main

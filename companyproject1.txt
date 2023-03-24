@@ -1,0 +1,47 @@
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| scms               |
+| sys                |
++--------------------+
+5 rows in set (0.00 sec)
+
+use scms;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+
+mysql> show tables;
++----------------+
+| Tables_in_scms |
++----------------+
+| address_table  |
+| person_table   |
++----------------+
+2 rows in set (0.00 sec)
+
+mysql> select * from address_table;
++------------+----------+
+| address_id | address  |
++------------+----------+
+|          1 | illford  |
+|          2 | east ham |
+|          3 | feltham  |
++------------+----------+
+3 rows in set (0.01 sec)
+
+mysql> select * from person_table;
++-----------+-------------+------------+
+| person_id | person_name | address_id |
++-----------+-------------+------------+
+|         1 | aidan       |          3 |
+|         2 | mary        |          2 |
+|         3 | gowtham     |          2 |
++-----------+-------------+------------+
+3 rows in set (0.00 sec)
+

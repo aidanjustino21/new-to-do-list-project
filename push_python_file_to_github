@@ -1,0 +1,19 @@
+ cd new-to-do-list-project
+  135  cd ..
+  136  mv personhelper.py /home/ec2/new-to-do-list-project/personhelper.py
+  137  mv personhelper.py /home/ec2/new-to-do-list-project/
+  138  cp personhelper.py /home/ec2/new-to-do-list-project/personhelper.py
+  139  cp personhelper.py /home/ec2/new-to-do-list-project/
+  140  mv persondao.py /home/ec2-user/new-to-do-list-project/
+  141  mv personhelper.py /home/ec2-user/new-to-do-list-project/
+  142  mv person.csv /home/ec2-user/new-to-do-list-project/
+  143  mv dbconnection.py /home/ec2-user/new-to-do-list-project/
+  144  cd new-to-do-list-project
+  145  ls
+  146  git add person.csv
+  147  git add dbconnection.py
+  148  git add persondao.py
+  149  git add personhelper.py
+  150  git commit -m " python"
+  151  git push -u origin main
+

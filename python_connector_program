@@ -1,0 +1,51 @@
+ python --version
+   23  sudo apt-get install python3.7
+   24  wget https://www.python.org/ftp/python/3.7.4/Python-3.7.4.tgz
+   25  python --version
+   26  python3
+   27  python3 --version
+   28  pip3 install mysql-connector-python
+   29  sudo apt install python3-pip
+   30  sudo apt install python-pip
+   31  pip3 -V
+   32  sudo apt-get install python3-pip python-dev
+   33  sudo apt-get install python-pip
+   34  pip 20.0.2 from C:\Python38\lib\site-packages\pip (python 3.8)
+   35  Python 3.8.2
+   36  python --version
+   37  python -m pip3 install --upgrade pip
+   38  python3 -m pip install --upgrade pip
+   39  python -m ensurepip --default-pip
+   40  pip 20.0.2 from /usr/lib/python3/dist-packages/pip (python 3.8)
+   41  pip 20.0.2 from /usr/lib/python3/dist-packages/pip
+   42  pip 20.0.2 from /usr/lib/python3/dist-packages/pip(python 3.8)
+   43  sudo apt install python3-pip
+   44  pip download --platform linux_x86_64 --only-binary=:all: --no-binary=:none:  pandas
+   45  pip3
+   46  pip3 --version
+   47  python3 get-pip.py
+   48  sudo yum -y install python-pip
+   49  pip --version
+   50  pip3 --version
+   51  pip3 install mysql-connector-python
+   52  vi dbconnection.py
+   53  python3 dbconnection.py
+   54  vi dbconnection.py
+   55  vi persondao.py
+   56  sudo mysql -u root -p
+   57  vi persondao.py
+   58  python3 persondao.py
+   59  vi persondao.py
+   60  python3 persondao.py
+   61  vi persondao.py
+   62  ls
+   63  rm persondao.py
+   64  ls
+   65  vi persondao.py
+   66  python3 persondao.py
+   67  vi persondao.py
+   68  python3 persondao.py
+   69  vi persondao.py
+   70  vi person.csv
+   71  vi personhelper.py
+   72  python3 personhelper.py
